@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+:root {
+  --tremindBlue: #085394;
+}
+
+.navbar {
+  background-color: var(--tremindBlue);
+}
+
+.body {
+  font-family: 'Exo';
+}
+
+.flex-container {
+  display: flex;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    vertical-align: top;
+}
+
+.input-text {
+  width: 100%;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.input-text:focus {
+  outline: none;
+}
+
+.checkbox-text {
+    display: inline-block;
+    padding-left: 10px;
+    width: 95%;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.next-day-task-list {
+  margin-left: 16px;
+  padding: 0;
+  list-style-type: square;
+}
+
+.TimeLeft-container {
+  flex: 1;
+  text-align: right;
+}
+
+.TimeLeft {
+  font-size: 1.75em;
+}
+
+.TimeLeft-span {
+  font-size: 1em;
+}
+
+#next-task-0 {
+  margin-top: 15px;
+}
+
+.checkbox-text-verynexttask {
+  font-size: 2em;
+}
+
+.modify-task-and-timeleft {
+  display: flex;
+}
+
+.ModifyTask {
+  flex: 2;
+  margin-bottom: 20px;
+}
+
+.btn-delete-pop-up , .btn-edit-pop-up {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+}
+
+.pop-up-edit, .pop-up-delete {
+  width: 300px;
+}
+
+.pop-up-input {
+  margin: 0 0 10px 5px;
+  width: 265px;
+  border-style: none;
+}
+
+.btn-pop-up {
+  padding: 0 5px 2px 0;
+}
+
+.btn-ok {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-modify {
+  margin-right: 3px;
+  padding: 2px 5px;
+  width: 60px;
+}
+
+.input-time {
+  width: 40px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.pop-up-start {
+  text-align: center;
+}
+
+.btn-pop-up-start {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn-start {
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.flex-start-container {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-start-item {
+  flex: 1;
+  text-align: center;
+}
+
+.TodayTask {
+  margin-left: 30px;
+  flex: 4;
+}
+
+.Title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--tremindBlue);
+}
+
+.clock-digital {
+  text-align: center;
+}
+
+.react-clock {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ClockAndNextDayTask {
+  margin-left: 30px;
+  flex: 4;
+}
+
+
+.TaskNextDay {
+  margin-top: 20px;
+}
+
+.DaySelector {
+  float: right;
+  margin-right: 0;
+}
+
+.dropdown {
+  border-radius: 5px;
+}
+
+.dropdown:focus {
+  outline: none;
+}
+
+.NoteAndDone {
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  flex: 3;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+.note-important {
+    margin-top: 10px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    border-style: none;
+    border-bottom: 1px solid #aaa;
+    color: black;
+}
+
+.note-section {
+  margin-top: 30px;
+}
+
+#textarea-note {
+  width: 100%;
+  height: 75px;
+  padding: 5px;
+  resize: none;
+  border-radius: 5px;
+}
+
+#textarea-note:focus {
+  outline: none;
+}
+
+.button-note-container {
+  text-align: right;
+}
+
+#button-save-note {
+  width: 100%;
+}
+
+.div-button-note-1 {
+  float: right;
+}
+
+.div-button-note-2 {
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    display: block;
+  }
+
+  .TodayTask {
+    width: 95%; 
+    margin:2.5%;
+  }
+
+  .ClockAndNextDayTask {
+    width: 95%; 
+    margin:2.5%;
+    margin-top: 50px;
+  }
+
+  .NoteAndDone {
+    width: 95%; 
+    margin: 2.5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
